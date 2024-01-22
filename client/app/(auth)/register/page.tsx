@@ -1,0 +1,17 @@
+"use client";
+
+import React from "react";
+import styles from "./page.module.scss";
+import { CustomForm } from "@/app/(auth)/components/CustomForm/CustomForm";
+import { Provider } from "react-redux";
+import { store } from "@/redux/store";
+export default function Page() {
+  return (
+    <div className={styles.register}>
+      <div className={styles.black}>
+        <h2>Chupi</h2>
+      </div>
+      <CustomForm register />
+    </div>
+  );
+}
