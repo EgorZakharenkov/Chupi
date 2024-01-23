@@ -1,0 +1,29 @@
+.fileInputContainer {
+  position: relative;
+
+  .fileLabel {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+
+    &:hover {
+      background-color: #2980b9;
+    }
+  }
+
+  .fileInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+
+    &:focus + .fileLabel {
+      outline: 1px solid #3498db;
+    }
+  }
+}

@@ -18,7 +18,7 @@ export default function Home() {
     if (isAuth) {
       dispatch(FetchPLayList(isAuth._id));
     }
-  }, []);
+  }, [isAuth]);
   !isAuth && router.push("/login");
   return <MainContainer />;
 }

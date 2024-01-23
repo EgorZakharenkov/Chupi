@@ -1,17 +1,10 @@
 import React from "react";
-import styles from "@/app/_common/MainContainer/components/Banner/Banner.module.scss";
-import { FaEllipsisH } from "react-icons/fa";
+import styles from "./BreadCrumb.module.scss";
 
 const BreadCrumb: React.FC<{ name: string }> = ({ name }) => {
   return (
     <div className={styles.breadCrump}>
-      <p>
-        {name} <span>/{category}</span>
-      </p>
-
-      <i>
-        <FaEllipsisH />
-      </i>
+      <p>{name}</p>
     </div>
   );
 };

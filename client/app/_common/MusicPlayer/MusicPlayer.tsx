@@ -51,6 +51,7 @@ const MusicPlayer: React.FC = () => {
   useEffect(() => {
     if (item) {
       audioPlayer.current.play();
+      setIsPlaying(true);
       progressBar.current.value = String(audioPlayer.current.currentTime);
       animationRef.current = requestAnimationFrame(whilePlaying);
       if (audioPlayer.current.duration != 0) {

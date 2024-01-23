@@ -1,6 +1,10 @@
 import { BsFillHouseFill, BsJournalAlbum } from "react-icons/bs";
-import { BiPulse } from "react-icons/bi";
-import { FaBroadcastTower, FaMicrophoneAlt, FaPodcast } from "react-icons/fa";
+import {
+  FaBroadcastTower,
+  FaMicrophoneAlt,
+  FaPodcast,
+  FaUser,
+} from "react-icons/fa";
 
 export type MenuList = {
   id: number;
@@ -17,22 +21,22 @@ export const menuList: MenuList[] = [
     link: "/",
   },
   {
-    id: 2,
-    icon: <BiPulse />,
-    name: "Discover",
-    link: "/discover",
+    id: 4,
+    icon: <FaMicrophoneAlt />,
+    name: "Artist",
+    link: "/artist",
+  },
+  {
+    id: 3,
+    icon: <FaUser />,
+    name: "Profile",
+    link: "/profile",
   },
   {
     id: 3,
     icon: <FaBroadcastTower />,
     name: "Radio",
     link: "/radio",
-  },
-  {
-    id: 4,
-    icon: <FaMicrophoneAlt />,
-    name: "Artist",
-    link: "/artist",
   },
   {
     id: 5,
